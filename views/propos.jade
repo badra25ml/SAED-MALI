@@ -1,4 +1,40 @@
 extends layout
 
 block content
-  
+    .gbb-row-wrapper
+        .gbb-row.bg-size-cover.gsc-equal-height(style='padding-top:30px; padding-bottom:30px')
+          .bb-inner.remove_padding
+            .bb-container.container
+              .row
+                .row-wrapper.clearfix
+                  .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .column-inner.bg-size-cover
+                      .column-content-inner
+                        .widget.clearfix.gsc-divider.one-line
+                          .line-1
+                          .line-2
+                          .line-3
+      .gbb-row-wrapper
+        .gbb-row.bg-size-cover(style='')
+          .bb-inner.remove_padding_bottom
+            .bb-container.container-fw
+              .row
+                .row-wrapper.clearfix
+                  .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .column-inner.bg-size-cover
+                      .column-content-inner
+                        .widget.gsc-heading.align-center.style-1.text-dark
+                          h2.title
+                            span QUI SOMMES NOUS
+                .clearfix
+                .gsc-tab-views.style-1
+                  .clearfix.text-center
+                    ul.nav.nav-tabs
+                      li.active
+                        a(data-toggle='tab' href='#tab-item-rxhpx1') Infrastructures de transports
+                      li
+                        a(data-toggle='tab' href='#tab-item-rxhpx2') Aménagements Hydro-agricoles et développement rural
+                      li
+                        a(data-toggle='tab' href='#tab-item-rxhpx3') Approvisionnement en eau et assainissement
+                      li
+                        a(data-toggle='tab' href='#tab-item-rxhpx4') Bâtiments civils et industriels

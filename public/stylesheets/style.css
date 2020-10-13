@@ -28,7 +28,10 @@ a {
   #widget.widget-content {
     height: 100%;
   }
-  
+  div > iframe {
+    height: 300px;
+    width: 400px;
+  }
   html, body {
     height: 100%;
     margin: 0;
