@@ -1,40 +1,103 @@
 extends layout
 
 block content
-    .gbb-row-wrapper
-        .gbb-row.bg-size-cover.gsc-equal-height(style='padding-top:30px; padding-bottom:30px')
-          .bb-inner.remove_padding
-            .bb-container.container
-              .row
-                .row-wrapper.clearfix
-                  .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                    .column-inner.bg-size-cover
-                      .column-content-inner
-                        .widget.clearfix.gsc-divider.one-line
-                          .line-1
-                          .line-2
-                          .line-3
-      .gbb-row-wrapper
-        .gbb-row.bg-size-cover(style='')
-          .bb-inner.remove_padding_bottom
-            .bb-container.container-fw
-              .row
-                .row-wrapper.clearfix
-                  .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                    .column-inner.bg-size-cover
-                      .column-content-inner
-                        .widget.gsc-heading.align-center.style-1.text-dark
-                          h2.title
-                            span QUI SOMMES NOUS
+                //- .gbb-row-wrapper
+                //-     .gbb-row.bg-size-cover.gsc-equal-height(style='padding-top:30px; padding-bottom:30px')
+                //-       .bb-inner.remove_padding
+                //-         .bb-container.container
+                //-           .row
+                //-             .row-wrapper.clearfix
+                //-               .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                //-                 .column-inner.bg-size-cover
+                //-                   .column-content-inner
+                //-                     .widget.clearfix.gsc-divider.one-line
+                //-                       .line-1
+                //-                       .line-2
+                //-                       .line-3
+                //-   .gbb-row-wrapper
+                //-     .gbb-row.bg-size-cover(style='')
+                //-       .bb-inner.remove_padding_bottom
+                //-         .bb-container.container-fw
+                //-           .row
+                //-             .row-wrapper.clearfix
+                //-               .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                //-                 .column-inner.bg-size-cover
+                //-                   .column-content-inner
+                //-                     .widget.gsc-heading.align-center.style-1.text-dark
+                                      
                 .clearfix
-                .gsc-tab-views.style-1
+                 .gsc-tab-views.style-1
                   .clearfix.text-center
                     ul.nav.nav-tabs
-                      li.active
-                        a(data-toggle='tab' href='#tab-item-rxhpx1') Infrastructures de transports
-                      li
-                        a(data-toggle='tab' href='#tab-item-rxhpx2') Aménagements Hydro-agricoles et développement rural
-                      li
-                        a(data-toggle='tab' href='#tab-item-rxhpx3') Approvisionnement en eau et assainissement
-                      li
-                        a(data-toggle='tab' href='#tab-item-rxhpx4') Bâtiments civils et industriels
+                      h2.title
+                        span QUI SOMMES NOUS
+                .clearfix.propos
+                  .node__content.clearfix
+                    .field.field--name-field-block-builder.field--type-blockbuilder.field--label-hidden.field__item
+                      .gavias-blockbuilder-content
+                        .gavias-blockbuilder-content
+                          .gbb-row-wrapper
+                            .gbb-row.bg-size-cover(style='')
+                              .bb-inner.remove_padding
+                                .bb-container.container
+                                  .row
+                                    .row-wrapper.clearfix
+                                      .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                                        .column-inner.bg-size-cover
+                                          .column-content-inner
+                                            .gsc-our-gallery
+                                              .owl-carousel.init-carousel-owl.owl-loaded.owl-drag(data-items='1' data-items_lg='1' data-items_md='1' data-items_sm='2' data-items_xs='1' data-loop='1' data-speed='500' data-auto_play='1' data-auto_play_speed='2000' data-auto_play_timeout='5000' data-auto_play_hover='1' data-navigation='1' data-rewind_nav='0' data-pagination='0' data-mouse_drag='1' data-touch_drag='1')
+                                                .owl-stage-outer
+                                                  .owl-stage(style='transform: translate3d(-1233.31px, 0px, 0px); transition: all 0s ease 0s; width: 3700px;')
+                                                    .owl-item.cloned(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title SAED-Mali, L'ingénierie au service du développement
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
+                                                    .owl-item.cloned(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
+                                                    .owl-item.active(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title SAED-Mali, L'ingénierie au service du développement
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
+                                                    .owl-item(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
+                                                    .owl-item.cloned(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title SAED-Mali, L'ingénierie au service du développement
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
+                                                    .owl-item.cloned(style='width: 616.656px;')
+                                                      .item
+                                                        .content-inner
+                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
+                                                          .image
+                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
+                                                .owl-nav
+                                                  .owl-prev
+                                                    i.fa.fa-angle-left
+                                                  .owl-next
+                                                    i.fa.fa-angle-right
+                                                .owl-dots.disabled  
+                           .gsc-tab-views.style-2
+                              ul.nav.nav-tabs
+                                li.active
+                                  a(data-toggle='tab' href='#tab-item-rxhpx1') Infrastructures de transports
+                                li
+                                  a(data-toggle='tab' href='#tab-item-rxhpx2') Aménagements Hydro-agricoles et développement rural
+                                li
+                                  a(data-toggle='tab' href='#tab-item-rxhpx3') Approvisionnement en eau et assainissement
+                                li
+                                  a(data-toggle='tab' href='#tab-item-rxhpx4') Bâtiments civils et industriels

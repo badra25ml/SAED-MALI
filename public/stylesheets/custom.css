@@ -1,0 +1,12 @@
+.tparrows.tp-leftarrow:before {
+  content: "\f104"  !important;
+  }
+  .tparrows.tp-rightarrow:before {
+  content: "\f105"  !important;
+  }
+  
+  .tparrows:before {
+  font-family: fontawesome !important;
+  
+  }
+  

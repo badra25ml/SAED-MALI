@@ -620,7 +620,7 @@ div.tree-child-horizontal {
 }
 
 .revicon-left-open-big:before {
-    content: '\e824';
+    content: '\e824' !important;
 }
 
 .revicon-right-open-big:before {
@@ -2065,7 +2065,7 @@ img.tp-slider-alternative-image {
 }
 
 .tparrows.tp-leftarrow:before {
-    content: '\e824' !important;
+    content: '\f104' !important;
 }
 
 .tparrows.tp-rightarrow:before {
@@ -5780,7 +5780,7 @@ img.tp-slider-alternative-image {
 }
 
 .custom.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .custom.tparrows.tp-rightarrow:before {
@@ -6008,7 +6008,7 @@ img.tp-slider-alternative-image {
 }
 
 .erinyen.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .erinyen.tparrows.tp-rightarrow:before {
@@ -6465,7 +6465,7 @@ img.tp-slider-alternative-image {
 }
 
 .hades.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .hades.tparrows.tp-rightarrow:before {
@@ -6725,7 +6725,7 @@ img.tp-slider-alternative-image {
 }
 
 .hebe.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .hebe.tparrows.tp-rightarrow:before {
@@ -6987,7 +6987,7 @@ img.tp-slider-alternative-image {
 }
 
 .hermes.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .hermes.tparrows.tp-rightarrow:before {
@@ -7620,7 +7620,7 @@ img.tp-slider-alternative-image {
 }
 
 .persephone.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .persephone.tparrows.tp-rightarrow:before {
@@ -7743,7 +7743,7 @@ img.tp-slider-alternative-image {
 }
 
 .zeus.tparrows.tp-leftarrow:before {
-    content: "\e824" !important;
+    content: "\f104" !important;
 }
 
 .zeus.tparrows.tp-rightarrow:before {
