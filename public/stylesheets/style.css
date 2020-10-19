@@ -64,7 +64,13 @@ ul.nav-tabs > h2 {
   max-width: 100%;
   height: 100%;
 }
-
+ul.nav.nav-tabs > h4 {
+  color: #fff;
+} 
+div > h6 {
+  margin: 10px 10px;
+  width: 100%;
+}
 .gsc-tab-views.style-1 ul.nav-tabs > li.active a {
   color: white;
 }
