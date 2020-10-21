@@ -8,7 +8,7 @@ a {
 } */
 @media(min-width:992px) {
   header .clearfix{
-    float: right;  
+    float: right;
   }
   header .clearfix > li {
     display: inline-block;
@@ -66,7 +66,7 @@ ul.nav-tabs > h2 {
 }
 ul.nav.nav-tabs > h4 {
   color: #fff;
-} 
+}
 div > h6 {
   margin: 10px 10px;
   width: 100%;
@@ -76,7 +76,7 @@ div > h6 {
 }
 
 .gv-sticky-menu {
-  
+
 }
 .container-carousel-tab-view, .flex-container-propos{
   display: flex;
@@ -164,4 +164,6 @@ div > h6 {
   background-color: #c5c5c5;
   text-align: -webkit-center;
   text-transform: uppercase;
+}
+
 }
