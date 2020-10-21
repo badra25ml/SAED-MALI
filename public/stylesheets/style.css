@@ -74,15 +74,28 @@ div > h6 {
 .gsc-tab-views.style-1 ul.nav-tabs > li.active a {
   color: white;
 }
-.gsc-tab-views.style-2 {
-  display: block;
-  margin: 40px 500px;
-}
+
 .gv-sticky-menu {
   
 }
-.clearfix.propos {
-  
+.container-carousel-tab-view, .flex-container-propos{
+  display: flex;
+}
+#myCarousel {
+  flex: 2;
+  margin: 20px;
+}
+.gsc-tab-views.style-2 {
+ flex: 1;
+ margin: 20px;
+ text-align: left;
+ 
+}
+
+#myCarousel.carousel.slide, .gsc-tab-views.style-2 {
+  /* width: 50%;
+  float: left; */
+  /* padding: 20px; */
 }
 .navigation .gva_menu > li > a {
   font-size: 12px;
@@ -98,6 +111,19 @@ div > h6 {
   background-color: #1d85a7;
   color: #009673;
   text-decoration: wavy !important;
+}
+.container-carousel-tab-view:first-child{
+  flex: 2;
+}
+
+.flex-child:first-child {
+  flex: 40em;
+  margin: 20px;
+}
+.flex-child > .right {
+  flex: 100em;
+  margin: 20px;
+  background: #F7F8F8;
 }
 
 .portfolio-item.v2:after {

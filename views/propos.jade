@@ -1,113 +1,78 @@
 extends layout
 
-block content
-                //- .gbb-row-wrapper
-                //-     .gbb-row.bg-size-cover.gsc-equal-height(style='padding-top:30px; padding-bottom:30px')
-                //-       .bb-inner.remove_padding
-                //-         .bb-container.container
-                //-           .row
-                //-             .row-wrapper.clearfix
-                //-               .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                //-                 .column-inner.bg-size-cover
-                //-                   .column-content-inner
-                //-                     .widget.clearfix.gsc-divider.one-line
-                //-                       .line-1
-                //-                       .line-2
-                //-                       .line-3
-                //-   .gbb-row-wrapper
-                //-     .gbb-row.bg-size-cover(style='')
-                //-       .bb-inner.remove_padding_bottom
-                //-         .bb-container.container-fw
-                //-           .row
-                //-             .row-wrapper.clearfix
-                //-               .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                //-                 .column-inner.bg-size-cover
-                //-                   .column-content-inner
-                //-                     .widget.gsc-heading.align-center.style-1.text-dark
-                                      
-                .clearfix
-                 .gsc-tab-views.style-1
-                  .clearfix.text-center
-                    ul.nav.nav-tabs
-                      h2.title
-                        span QUI SOMMES NOUS
-                      h4
-                        | Société Africaine d'Etudes pour le developpement
-                .clearfix.propos
-                  .node__content.clearfix
-                    .field.field--name-field-block-builder.field--type-blockbuilder.field--label-hidden.field__item
-                      .gavias-blockbuilder-content
-                        .gavias-blockbuilder-content
-                          .gbb-row-wrapper
-                            .gbb-row.bg-size-cover(style='')
-                              .bb-inner.remove_padding
-                                .bb-container.container
-                                  .row
-                                    .row-wrapper.clearfix
-                                      .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                                        .column-inner.bg-size-cover
-                                          .column-content-inner
-                                            .gsc-our-gallery
-                                              .owl-carousel.init-carousel-owl.owl-loaded.owl-drag(data-items='1' data-items_lg='1' data-items_md='1' data-items_sm='2' data-items_xs='1' data-loop='1' data-speed='500' data-auto_play='1' data-auto_play_speed='2000' data-auto_play_timeout='5000' data-auto_play_hover='1' data-navigation='1' data-rewind_nav='0' data-pagination='0' data-mouse_drag='1' data-touch_drag='1')
-                                                .owl-stage-outer
-                                                  .owl-stage(style='transform: translate3d(-1233.31px, 0px, 0px); transition: all 0s ease 0s; width: 3700px;')
-                                                    .owl-item.cloned(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title SAED-Mali, L'ingénierie au service du développement
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
-                                                    .owl-item.cloned(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
-                                                    .owl-item.active(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title SAED-Mali, L'ingénierie au service du développement
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
-                                                    .owl-item(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
-                                                    .owl-item.cloned(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title SAED-Mali, L'ingénierie au service du développement
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/Cover-Afro-Pro.jpg')
-                                                    .owl-item.cloned(style='width: 616.656px;')
-                                                      .item
-                                                        .content-inner
-                                                          .title Nos valeurs reposent sur notre capacité de travail en Équipe 
-                                                          .image
-                                                            img(src='http://cira-sas.com/sites/default/files/inline-images/DSC_6203(3).jpg')
-                                                .owl-nav
-                                                  .owl-prev
-                                                    i.fa.fa-angle-left
-                                                  .owl-next
-                                                    i.fa.fa-angle-right
-                                                .owl-dots.disabled  
-                           .gsc-tab-views.style-2
-                              ul.nav.nav-tabs
-                                li.active
-                                  a(data-toggle='tab' href='#tab-item-rxhpx1') Infrastructures de transports
-                                li
-                                  a(data-toggle='tab' href='#tab-item-rxhpx2') Aménagements Hydro-agricoles et développement rural
-                                li
-                                  a(data-toggle='tab' href='#tab-item-rxhpx3') Approvisionnement en eau et assainissement
-                                li
-                                  a(data-toggle='tab' href='#tab-item-rxhpx4') Bâtiments civils et industriels
-                      div
-                       container
+block content                          
+          .clearfix
+            .gsc-tab-views.style-1
+              .clearfix.text-center
+                ul.nav.nav-tabs
+                  h2.title
+                    span QUI SOMMES NOUS
+                  h4
+                    | Société Africaine d'Etudes pour le developpement  
+          div
+          .container-carousel-tab-view
+            #myCarousel.carousel.slide(data-ride='carousel')
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#myCarousel' data-slide-to='0')
+                li(data-target='#myCarousel' data-slide-to='1')
+                li(data-target='#myCarousel' data-slide-to='2')
+              // Wrapper for slides
+              .carousel-inner
+                .item.active(style='width: 616.656px;')
+                  img(src='../images/PM-Deguena-Fla-wr.jpeg' alt='Chania')
+                  .carousel-caption
+                    h3 Deguena
+                    p Périmètre maraicher Deguena
+                .item(style='width: 616.656px;')
+                  img(src='../images/Chenal-damn-avec-Pompes-imergs.jpeg' alt='Chicago')
+                  .carousel-caption
+                    h3 Anambe
+                    p Pompe imergée
+                .item(style='width: 616.656px;')
+                  img(src='../images/DSC00300.JPG' alt='New York')
+                  .carousel-caption
+                    h3 Odoucar-Bambinar
+                    p Route Tronon-Odoucar-Bambinar
+              // Left and right controls
+              a.left.carousel-control(href='#myCarousel' data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.right.carousel-control(href='#myCarousel' data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+
+            .gsc-tab-views.style-2
+                ul.nav.nav-tabs
+                  li.active
+                    a(data-toggle='tab' href='#tab-item-rxhpx1') Qui sommes nous
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx2') Notre Equipe
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx3') Nos partenaires
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx4') Notre mission 
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx5') Nos moyens matériels 
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx6') Nos références 
+                  li
+                    a(data-toggle='tab' href='#tab-item-rxhpx7') Nos Projets                    
+          .flex-container-propos
+                  .flex-child
+                    .left
+                        h5 Presentation de la SAED
                         h6
-                          span La S.A.E.D. est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
-                          br
-                          | La S.A.E.D. a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 14 585 du 16 /03 /1999 régularisé le 02/02/05 sous le numéro MA-BKO-2005-B-425.
-                          br
-                          | Le siège social de la S.A.E.D. est à Bamako, quartier ACI SOTUBA.
+                        span La S.A.E.D. est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
+                        br
+                        | La S.A.E.D. a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 14 585 du 16 /03 /1999 régularisé le 02/02/05 sous le numéro MA-BKO-2005-B-425.
+                        br
+                        | Le siège social de la S.A.E.D. est à Bamako, quartier ACI SOTUBA.
+                  .flex-child
+                    .right
+                      h5 Presentation de la SAED
+                      | Vous pouvez télécharger notre 
+                      br
+                      | plaquette de présentation pour en 
+                      br
+                      | savoir plus sur nous.
