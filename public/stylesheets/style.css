@@ -92,10 +92,8 @@ div > h6 {
  
 }
 
-#myCarousel.carousel.slide, .gsc-tab-views.style-2 {
-  /* width: 50%;
-  float: left; */
-  /* padding: 20px; */
+.gsc-tab-views.style-2 > ul.nav.nav-tabs {
+  
 }
 .navigation .gva_menu > li > a {
   font-size: 12px;
@@ -136,7 +134,7 @@ div > h6 {
   text-decoration: wavy !important;
 }
 
-.gsc-tab-views.style-1 ul.nav-tabs > li > a: hover {
+.gsc-tab-views.style-1 ul.nav-tabs > li > a:hover {
   color: white;
 }
 
