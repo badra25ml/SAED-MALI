@@ -6,6 +6,9 @@
 a {
   color: #00B7FF;
 } */
+body.footer-background #footer {
+  background: #121212;
+}
 @media(min-width:992px) {
   header .clearfix{
     float: right;
