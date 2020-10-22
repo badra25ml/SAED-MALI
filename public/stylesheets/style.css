@@ -141,5 +141,11 @@ div > h6 {
   text-align: -webkit-center;
   text-transform: uppercase;
 }
+div > li p,
+li ul,
+li ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
 }
