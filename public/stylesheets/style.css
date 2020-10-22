@@ -307,5 +307,16 @@ div > h6 {
   background-color: #c5c5c5;
   text-align: -webkit-center;
   text-transform: uppercase;
+<<<<<<< HEAD
   }
+=======
+}
+div > li p,
+li ul,
+li ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+>>>>>>> bc76da4b10c5ad9c68cb752b2aa6b20fc8bc6407
 }
