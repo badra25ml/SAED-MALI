@@ -218,6 +218,9 @@ div > h6 {
   
 }
 
+}
+
+
 @media only screen and (min-width:540px) and (max-width:760px) {
   .container-carousel-tab-view {
     display: unset;
@@ -248,6 +251,7 @@ div > h6 {
     flex: 1;
     width: 100%;
   }
+  
   .flex-child > .right {
     flex: 2;
     width: 96%;
@@ -256,7 +260,23 @@ div > h6 {
     width: 50%;
   }
 }
-
+div ul.nav.nav-tabs > ol{
+  display: inline-flex;
+  text-align: center;
+}
+ul.nav.nav-tabs > ol > li {
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+ul.nav.nav-tabs > ol > li > a, ul.nav.nav-tabs > ol  > span{
+  list-style: none;
+  margin-bottom: 0 !important;
+  padding: 0;
+  color: #fff;
+}
 .flex-container-propos .flex-child .title::after {
     content: '';
     width: 60px;
@@ -307,16 +327,36 @@ div > h6 {
   background-color: #c5c5c5;
   text-align: -webkit-center;
   text-transform: uppercase;
-<<<<<<< HEAD
   }
-=======
-}
-div > li p,
-li ul,
-li ol {
-	margin-top: 0;
-	margin-bottom: 0;
+  .left > h5 {
+    position: relative;  
+    display: inline-block;
+  }
+  .left > h5::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #1d85a7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+/* Nos moyens */
+
+ .moyens  > span{
+  position: relative;  
+  display: inline-block;
 }
 
->>>>>>> bc76da4b10c5ad9c68cb752b2aa6b20fc8bc6407
+.moyens > span::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #1d85a7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }

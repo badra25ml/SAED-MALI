@@ -1,14 +1,21 @@
 extends layout
 
-block content                          
+block content   
           .clearfix
             .gsc-tab-views.style-1
               .clearfix.text-center
+                div
                 ul.nav.nav-tabs
                   h2.title
-                    span QUI SOMMES NOUS
-                  h4
-                    | Société Africaine d'Etudes pour le developpement  
+                    span(style="text-transform:uppercase") Qui sommes nous?
+                  ol
+                    li
+                      a(href="/index") Acceuil&nbsp
+                    span /
+                    li 
+                    li 
+                      | &nbspÀ propos de SAED sarl                     
+          
           div
           .container-carousel-tab-view
             #myCarousel.carousel.slide(data-ride='carousel')
@@ -61,7 +68,8 @@ block content
           .flex-container-propos
                   .flex-child
                     .left
-                        h5 Presentation de la SAED
+                        h5 Presentation de la SAED sarl
+                        br
                         | La S.A.E.D. est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
                         br
                         | La S.A.E.D. a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 14 585 du 16 /03 /1999 régularisé le 02/02/05 sous le numéro MA-BKO-2005-B-425.
@@ -80,13 +88,13 @@ block content
                           li
                             strong les bâtiments civils et industriels.
                         br
-                        | SAED Mali dispose d’une équipe de professionnels qualifiés, aptes à répondre aux exigences de ses Clients.
+                        | SAED sarl dispose d’une équipe de professionnels qualifiés, aptes à répondre aux exigences de ses Clients.
                         br
                         br
                         | Elle travaille aussi bien pour les administrations publiques que pour les organisations internationales et les entreprises privées.
                         br
                         br
-                        | Grâce à la motivation et l’implication de tout le personnel, SAED est certifié ISO 9001, OHSAS 18001 et ISO 14001.
+                        | Grâce à la motivation et l’implication de tout le personnel, SAED sarl est certifié ISO 9001, OHSAS 18001 et ISO 14001.
                         h5 No valeurs et engagements
                         div
                          .column-content
@@ -104,7 +112,7 @@ block content
 
                   .flex-child
                     .right
-                      h5 Presentation de la SAED
+                      h5 Presentation de la SAED sarl
                       | Vous pouvez télécharger notre 
                       br
                       | plaquette de présentation pour en 
