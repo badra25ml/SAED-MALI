@@ -28,3 +28,26 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-opacity-off";
 }
+// filter on "Nos Projets page"
+
+function filter(e){
+  let valu = document.getElementsByClassName("btn-filter");
+  valu.onClick = function changeContent(e){
+    // document.getElementById('nos-projets').innerHTML = "";
+    
+  }
+  valu.onClick()
+}
+filter()
+
+
+// function clearMenus() {
+//   $(backdrop).remove()
+//   $(toggle).each(function (e) {
+//     var $parent = getParent($(this))
+//     if (!$parent.hasClass('open')) return
+//     $parent.trigger(e = $.Event('hide.bs.dropdown'))
+//     if (e.isDefaultPrevented()) return
+//     $parent.removeClass('open').trigger('hidden.bs.dropdown')
+//   })
+// }

@@ -361,3 +361,12 @@ ul.nav.nav-tabs > ol > li > a, ul.nav.nav-tabs > ol  > span{
     left: 0;
     z-index: 1;
 }
+
+/* @media only screen and (min-width:400px) and (max-width:760px) {
+  .w3-content {
+    height: 80rem; border: 1rem solid rgba(0,0,0,.1);
+  }
+  iframe.mySlides {
+    width: 100%;
+  } 
+}  */
