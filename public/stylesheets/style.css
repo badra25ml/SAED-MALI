@@ -328,7 +328,6 @@ ul.nav.nav-tabs > ol > li > a, ul.nav.nav-tabs > ol  > span{
   text-align: -webkit-center;
   text-transform: uppercase;
   }
-<<<<<<< HEAD
   .left > h2 {
     position: relative;  
     display: inline-block;
@@ -351,11 +350,6 @@ ul.nav.nav-tabs > ol > li > a, ul.nav.nav-tabs > ol  > span{
   position: relative;  
   display: inline-block;
 }
-=======
-=======
-}
-
->>>>>>> 61f68a8bafd8f87bea0bbdc8a01fe496c86e69d6
 
 .moyens > span::after {
     content: "";
@@ -367,7 +361,21 @@ ul.nav.nav-tabs > ol > li > a, ul.nav.nav-tabs > ol  > span{
     left: 0;
     z-index: 1;
 }
+/* Contact page */
 
+.row-wrapper.clearfix {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 3px 15px 0px rgba(1,0,0,1.3);
+}
+.gsc-column.col-lg-7.col-md-7.col-sm-12.col-xs-12 {
+  display: flex;
+  position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* @media only screen and (min-width:400px) and (max-width:760px) {
   .w3-content {
     height: 80rem; border: 1rem solid rgba(0,0,0,.1);
