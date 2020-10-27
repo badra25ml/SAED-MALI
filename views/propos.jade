@@ -1,6 +1,7 @@
 extends layout
 
-block content   
+block content  
+          br 
           .clearfix
             .gsc-tab-views.style-1
               .clearfix.text-center
@@ -10,7 +11,7 @@ block content
                     span(style="text-transform:uppercase") Qui sommes nous?
                   ol
                     li
-                      a(href="/index") Acceuil&nbsp
+                      a(href="/") Acceuil&nbsp
                     span /
                     li 
                     li 
@@ -18,7 +19,7 @@ block content
           
           div
           .container-carousel-tab-view
-            #myCarousel.carousel.slide(data-ride='carousel')
+            #myCarousel.carousel.slide.propos(data-ride='carousel')
               // Indicators
               ol.carousel-indicators
                 li.active(data-target='#myCarousel' data-slide-to='0')
@@ -50,7 +51,7 @@ block content
                 span.sr-only Next
 
             .gsc-tab-views.style-2
-                ul.nav.nav-tabs
+                ul.nav.nav-tabs.right-view
                   li.active
                     a(data-toggle='tab' href='#tab-item-rxhpx1') Qui sommes nous
                   li
@@ -70,123 +71,38 @@ block content
                     .left
                         h2 Presentation de la SAED sarl
                         br
-                        | La S.A.E.D. est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
+                        | La 
+                        strong S.A.E.D sarl 
+                        | est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
                         br
-                        | La S.A.E.D. a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 14 585 du 16 /03 /1999 régularisé le 02/02/05 sous le numéro MA-BKO-2005-B-425.
+                        | La 
+                        strong S.A.E.D sarl 
+                        | a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 
+                        strong 14 585 du 16 /03 /1999 
+                        | régularisé le 
+                        strong 02/02/05 
+                        | sous le numéro 
+                        strong MA-BKO-2005-B-425.
                         br
-                        | Le siège social de la S.A.E.D. est à Bamako, quartier ACI SOTUBA.
-           .flex-container-propos
-                .flex-child
-                  .left
-                    table(style='height: 874px;', width='667')
-                      tbody
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Nom ou raison sociale
-                          td(style='width: 230px;')
-                            p &nbsp;SAED
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Forme juridique actuelle
-                          td(style='width: 230px;')
-                            p SARL
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Capital
-                            p D&eacute;tenu&nbsp; &agrave; 50% par Yacouba TRAORE (Directeur)
-                            p Et 50% par Kod&eacute;gou Kodjo ELO (Directeur Adjoint)
-                          td(style='width: 230px;')
-                            p 1&nbsp;500&nbsp;000 Fcfa
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p N&deg; Inscription au Registre du commerce
-                          td(style='width: 230px;')
-                            p
-                              | RC&nbsp;: 14&nbsp;585 du 16/03/1999 r&eacute;gularis&eacute; le 02/02/05 sous le num&eacute;ro MA-BKO-2005-B-425.
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p N&deg; DNSI
-                          td(style='width: 230px;')
-                            p N&deg; 6851017138
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Date de cr&eacute;ation
-                          td(style='width: 230px;')
-                            p 1999
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Adresse exacte (n&deg; de rue et b&acirc;timent)
-                          td(style='width: 230px;')
-                            p Di&eacute;libougou ACI&nbsp; SOTUBA
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Bo&icirc;te postale
-                            p Ville &ndash; R&eacute;gion ou Province
-                          td(style='width: 230px;')
-                            p B.P: E 1409
-                            p Bamako / Koulikoro
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p T&eacute;l&eacute;phone
-                            p &nbsp;
-                            p E-mail
-                          td(style='width: 230px;')
-                            p 20 71 73 21/76 47 53 13/66 71 45 10/ 63 98 11 61
-                            p
-                              span#cloak3086e946b08a0c58a2d7b9a8f98471f6
-                                a(href='mailto:info@saedmali.com') info@saedmali.com
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p Carte d&rsquo;Agr&eacute;ment des TP-N&deg;
-                            p Date de Validit&eacute;
-                          td(style='width: 230px;')
-                            p N&deg; 99-007/IC/DNI-GU
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p N&deg; Caisse de S&eacute;curit&eacute; Sociale
-                          td(style='width: 230px;')
-                            p N&deg; 83221946/1
-                        tr
-                          td(style='width: 421px;', colspan='2')
-                            p N&deg; d&rsquo;identification fiscale (Compte Contribuable)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          td(style='width: 230px;')
-                            p N&deg; 081101749M
-                        tr
-                          td(style='width: 657px;', colspan='3')
-                            p
-                              strong Nom et pr&eacute;noms des responsables ayant habilit&eacute; &agrave; signer les documents
-                        tr
-                          td(style='width: 313px;')
-                            p TRAORE Yacouba
-                          td(style='width: 338px;', colspan='2')
-                            p Directeur
-                        tr
-                          td(style='width: 313px;')
-                            p ELO Kodjo Kod&eacute;gou
-                          td(style='width: 338px;', colspan='2')
-                            p Directeur Adjoint
-
+                        | Le siège social de la 
+                        strong S.A.E.D sarl
+                        | est à Bamako, quartier ACI SOTUBA.
                         br
-                        | L'entreprise s’est fixée comme objectif d’assurer des prestations de qualité en matière d’étude, de conseil et d’assistance à la maîtrise d’ouvrage dans les domaines qui sont:
+                        br
+                        br
+                        | La S.A.E.D sarl répond aux interrogations préliminaires des clients en réalisant les prestations suivantes:
                         ul.feature-list.MsoNormal(style='text-align: justify')
                           li
-                            strong les infrastructures de transport,
+                            strong Études de conception,
                           li
-                            strong les aménagements hydro-agricoles et développement rural,
+                            strong Assistance pour la dévolution des travaux,
                           li
-                            strong l’approvisionnement en eau et l’assainissement,
+                            strong Contrôle et réception des travaux,
                           li
-                            strong les bâtiments civils et industriels.
+                            strong En fin la SAED collabore efficacement avec les maîtres d’ouvrages dans différentes tâches.
                         br
-                        | SAED sarl dispose d’une équipe de professionnels qualifiés, aptes à répondre aux exigences de ses Clients.
-                        br
-                        br
-                        | Elle travaille aussi bien pour les administrations publiques que pour les organisations internationales et les entreprises privées.
-                        br
-                        br
-                        | Grâce à la motivation et l’implication de tout le personnel, SAED sarl est certifié ISO 9001, OHSAS 18001 et ISO 14001.
-                        br
-                        h2 No valeurs et engagements
+                        
+                        h2 Nos domaines d'intervention
                         div
                          .column-content
                           ul.feature-list
@@ -195,12 +111,26 @@ block content
                               span(style="color:#1d85a7") 
                               strong(style="mso-bidi-font-weight: normal, font-weight: bold") Engagement
                             li
-                              strong Intégrité et respect,
+                              strong Mission d’assistance,
                             li
-                              strong Ambition
+                              strong Mission de formation et de sensibilisation des communautés rurales
                             li
-                              strong Développement durable
-
+                              strong Génie civil, Travaux d’aménagements de route et les travaux de bâtiment
+                            li
+                              strong Aménagement d’espace,
+                            li
+                              strong Hydraulique urbaine et industrielle,
+                            li
+                              strong Hydraulique villageoise et pastorale,
+                            li
+                              strong Aménagement hydro agricole,
+                            li
+                              strong Formation aux nouvelles technologies dans le domaine des aménagements routiers et de l’espace (Micro piste et AutoCAD),
+                            li
+                              strong Développement urbain,
+                            li
+                              strong Développement rural et gestion des ressources naturelles,
+                  br            
                   .flex-child
                     .right
                       h5 Presentation de la SAED sarl
@@ -214,3 +144,106 @@ block content
                       div
                        .action
                         a.btn-theme(target="_blank" href="") Telecharger
+               .gbb-row-wrapper
+                  .gbb-row.bg-size-default(style="background-image:url('../images/engineering.jpg'); background-repeat:no-repeat; background-position:center bottom")
+                    .bb-inner.remove_padding
+                      .bb-container.container
+                        .row
+                          .row-wrapper.clearfix
+                            .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                              .column-inner.bg-size-cover
+                                .column-content-inner
+                                  .widget.gsc-heading.align-center.style-2.text-dark
+                                    .title-desc
+                                    .clearfix
+
+                                      .flex-child
+                                          .left
+                                            table(style='height: 874px;', width='667')
+                                              tbody
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Nom ou raison sociale
+                                                  td(style='width: 230px;')
+                                                    p &nbsp;SAED
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Forme juridique actuelle
+                                                  td(style='width: 230px;')
+                                                    p SARL
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Capital
+                                                    p D&eacute;tenu&nbsp; &agrave; 50% par Yacouba TRAORE (Directeur)
+                                                    p Et 50% par Kod&eacute;gou Kodjo ELO (Directeur Adjoint)
+                                                  td(style='width: 230px;')
+                                                    p 1&nbsp;500&nbsp;000 Fcfa
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p N&deg; Inscription au Registre du commerce
+                                                  td(style='width: 230px;')
+                                                    p
+                                                      | RC&nbsp;: 14&nbsp;585 du 16/03/1999 r&eacute;gularis&eacute; le 02/02/05 sous le num&eacute;ro MA-BKO-2005-B-425.
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p N&deg; DNSI
+                                                  td(style='width: 230px;')
+                                                    p N&deg; 6851017138
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Date de cr&eacute;ation
+                                                  td(style='width: 230px;')
+                                                    p 1999
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Adresse exacte (n&deg; de rue et b&acirc;timent)
+                                                  td(style='width: 230px;')
+                                                    p Di&eacute;libougou ACI&nbsp; SOTUBA
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Bo&icirc;te postale
+                                                    p Ville &ndash; R&eacute;gion ou Province
+                                                  td(style='width: 230px;')
+                                                    p B.P: E 1409
+                                                    p Bamako / Koulikoro
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p T&eacute;l&eacute;phone
+                                                    p &nbsp;
+                                                    p E-mail
+                                                  td(style='width: 230px;')
+                                                    p 20 71 73 21/76 47 53 13/66 71 45 10/ 63 98 11 61
+                                                    p
+                                                      span#cloak3086e946b08a0c58a2d7b9a8f98471f6
+                                                        a(href='mailto:info@saedmali.com') info@saedmali.com
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p Carte d&rsquo;Agr&eacute;ment des TP-N&deg;
+                                                    p Date de Validit&eacute;
+                                                  td(style='width: 230px;')
+                                                    p N&deg; 99-007/IC/DNI-GU
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p N&deg; Caisse de S&eacute;curit&eacute; Sociale
+                                                  td(style='width: 230px;')
+                                                    p N&deg; 83221946/1
+                                                tr
+                                                  td(style='width: 421px;', colspan='2')
+                                                    p N&deg; d&rsquo;identification fiscale (Compte Contribuable)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  td(style='width: 230px;')
+                                                    p N&deg; 081101749M
+                                                tr
+                                                  td(style='width: 657px;', colspan='3')
+                                                    p
+                                                      strong Nom et pr&eacute;noms des responsables ayant habilit&eacute; &agrave; signer les documents
+                                                tr
+                                                  td(style='width: 313px;')
+                                                    p TRAORE Yacouba
+                                                  td(style='width: 338px;', colspan='2')
+                                                    p Directeur
+                                                tr
+                                                  td(style='width: 313px;')
+                                                    p ELO Kodjo Kod&eacute;gou
+                                                  td(style='width: 338px;', colspan='2')
+                                                    p Directeur Adjoint
+                                                br

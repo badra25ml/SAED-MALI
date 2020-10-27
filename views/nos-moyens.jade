@@ -1,6 +1,7 @@
 extends layout
 
 block content
+ br
  .clearfix
     .gsc-tab-views.style-1
       .clearfix.text-center
@@ -10,7 +11,7 @@ block content
             span(style="text-transform:uppercase") Nos moyens materiels
           ol
            li
-             a(href="/index") Acceuil&nbsp
+             a(href="/") Acceuil&nbsp
            span /
            li 
            li 
@@ -41,6 +42,7 @@ block content
             .clearfix
             // End Content
             .w3-content(style='max-width:1200px')
+             .row-wrapper.clearfix
               object(data="../images/moyens-materiels.pdf", type="application/pdf", style="width:100%; height:79rem; border: 1rem solid #1d85a7")
               br
               br

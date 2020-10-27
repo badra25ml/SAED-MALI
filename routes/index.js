@@ -46,4 +46,33 @@ router.get('/references', function(req, res, next) {
 router.get('/sodagri', function(req, res, next) {
   res.render('sodagri', { title: 'Sodagri' });
 });
+/* GET reference-barrage page. */
+router.get('/reference-barrage', function(req, res, next) {
+  res.render('reference-barrage', { title: 'Référence-barrage' });
+});
+/* GET reference-amenagement hydro agricole page. */
+router.get('/reference-amenagement-hydro-agricole', function(req, res, next) {
+  res.render('reference-amenagement-hydro-agricole', { title: 'Référence-amenagement-hydro-agricole' });
+});
+/* GET reference-projet-integre page. */
+router.get('/reference-projet-integre', function(req, res, next) {
+  res.render('reference-projet-integre', { title: 'Référence-Projet-Integre' });
+});
+/* GET bâtiment infrastructure page. */
+router.get('/reference-batiments-infrastructures', function(req, res, next) {
+  res.render('reference-batiments-infrastructures', { title: 'Référence-Bâtiments-Infrastructures' });
+});
+/* GET Alimentation en eau Potable page. */
+router.get('/reference-alimentation-en-eau-potable-et-pastorale', function(req, res, next) {
+  res.render('reference-alimentation-en-eau-potable-et-pastorale', { title: 'Référence-alimentation-en-eau-potable-et-pastorale' });
+});
+/* GET Routes bitumées page. */
+router.get('/reference-routes-bitumees', function(req, res, next) {
+  res.render('reference-routes-bitumees', { title: 'Référence-Routes-Bitumées' });
+});
+/* GET Piste Rurale page. */
+router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
+  res.render('reference-piste-rurale-amelioree', { title: 'Référence-Piste-Rurale-Améliorée' });
+});
+
 module.exports = router;
