@@ -1,5 +1,61 @@
 extends layout
 
 block content
-  h1= Contact
-  p Welcome to #{title}
+                                .clearfix
+                                    .gsc-tab-views.style-1
+                                      .clearfix.text-center
+                                      div
+                                      ul.nav.nav-tabs
+                                          h2.title
+                                            span(style="text-transform:uppercase") Nous Contacter
+                                          ol
+                                           li
+                                             a(href="/nous-contacter") Acceuil&nbsp
+                                           span /
+                                           li 
+                                           li 
+                                            | &nbspContact
+                                    .gbb-row-wrapper
+                                        .gbb-row.bg-size-default(style='padding-top:30px; padding-bottom:30px')
+                                          .bb-inner.default
+                                            .bb-container.container
+                                              .row
+                                                .row-wrapper.clearfix
+                                                  .gsc-column.col-lg-5.col-md-5.col-sm-12.col-xs-12
+                                                    .column-inner.bg-size-cover
+                                                      .column-content-inner
+                                                        .widget.gsc-image.text-center
+                                                          #widget.widget-content
+                                                            iframe(src="https://maps.google.com/maps?q=12.657894,-7.929784&t=m&z=13&output=embed&iwloc=near", frameborder="0", scrolling="no")
+                                                  .gsc-column.col-lg-7.col-md-7.col-sm-12.col-xs-12
+                                                    .column-inner.bg-size-cover
+                                                      .column-content-inner
+                                                        .widget.gsc-box-info.text-dark
+                                                          .widget-title.title 
+                                                          //- CONTACTEZ-NOUS
+                                                          .content
+                                                            p(style="text-align:center")
+                                                             strong
+                                                              | Société Africaine d’Etudes pour le Développement
+                                                          .info-item.address
+                                                            i.fas.fa-map-marked-alt(style="color:#1d85a7")
+                                                            span
+                                                              strong
+                                                                | BP : E1409 Bamako ACI SOTUBA 
+                                                          .info-item.email
+                                                            i.fas.fa-envelope-open(style="color:#1d85a7")
+                                                            span
+                                                              strong saedmali@orangemali.net / info@saedmali.com
+                                                          .info-item.phone
+                                                            i.fas.fa-phone(style="color:#1d85a7")
+                                                            span
+                                                              strong 20 71 73 21 / 20 24 73 21&nbsp&nbsp
+                                                              strong TEL/GSM : 63 98 11 61 / 76 47 53 13 / 66 71 45 10
+                                                              br
+                                                              br
+                                                              a(href='https://www.linkedin.com')
+                                                                i.fab.fa-linkedin-in(style="color:#1d85a7")&nbsp LinkedIn &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                              a(href='https://www.youtube.com')
+                                                                i.fa.fa-youtube(style="color:#1d85a7")&nbsp Youtube
+                                                              br
+                                                              

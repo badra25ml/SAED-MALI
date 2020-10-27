@@ -1,14 +1,21 @@
 extends layout
 
-block content                          
+block content   
           .clearfix
             .gsc-tab-views.style-1
               .clearfix.text-center
+                div
                 ul.nav.nav-tabs
                   h2.title
-                    span QUI SOMMES NOUS
-                  h4
-                    | Société Africaine d'Etudes pour le developpement  
+                    span(style="text-transform:uppercase") Qui sommes nous?
+                  ol
+                    li
+                      a(href="/index") Acceuil&nbsp
+                    span /
+                    li 
+                    li 
+                      | &nbspÀ propos de SAED sarl                     
+          
           div
           .container-carousel-tab-view
             #myCarousel.carousel.slide(data-ride='carousel')
@@ -61,16 +68,107 @@ block content
           .flex-container-propos
                   .flex-child
                     .left
-                        h5 Presentation de la SAED
+                        h2 Presentation de la SAED sarl
+                        br
                         | La S.A.E.D. est un bureau d’études privé, formé d’Ingénieurs et de Techniciens de compétences diverses, familiarisés avec les techniques modernes de travail.
                         br
                         | La S.A.E.D. a été créée en janvier 1999 et inscrit au registre du commerce de Bamako sous le numéro 14 585 du 16 /03 /1999 régularisé le 02/02/05 sous le numéro MA-BKO-2005-B-425.
                         br
                         | Le siège social de la S.A.E.D. est à Bamako, quartier ACI SOTUBA.
-                        br
+           .flex-container-propos
+                .flex-child
+                  .left
+                    table(style='height: 874px;', width='667')
+                      tbody
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Nom ou raison sociale
+                          td(style='width: 230px;')
+                            p &nbsp;SAED
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Forme juridique actuelle
+                          td(style='width: 230px;')
+                            p SARL
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Capital
+                            p D&eacute;tenu&nbsp; &agrave; 50% par Yacouba TRAORE (Directeur)
+                            p Et 50% par Kod&eacute;gou Kodjo ELO (Directeur Adjoint)
+                          td(style='width: 230px;')
+                            p 1&nbsp;500&nbsp;000 Fcfa
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p N&deg; Inscription au Registre du commerce
+                          td(style='width: 230px;')
+                            p
+                              | RC&nbsp;: 14&nbsp;585 du 16/03/1999 r&eacute;gularis&eacute; le 02/02/05 sous le num&eacute;ro MA-BKO-2005-B-425.
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p N&deg; DNSI
+                          td(style='width: 230px;')
+                            p N&deg; 6851017138
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Date de cr&eacute;ation
+                          td(style='width: 230px;')
+                            p 1999
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Adresse exacte (n&deg; de rue et b&acirc;timent)
+                          td(style='width: 230px;')
+                            p Di&eacute;libougou ACI&nbsp; SOTUBA
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Bo&icirc;te postale
+                            p Ville &ndash; R&eacute;gion ou Province
+                          td(style='width: 230px;')
+                            p B.P: E 1409
+                            p Bamako / Koulikoro
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p T&eacute;l&eacute;phone
+                            p &nbsp;
+                            p E-mail
+                          td(style='width: 230px;')
+                            p 20 71 73 21/76 47 53 13/66 71 45 10/ 63 98 11 61
+                            p
+                              span#cloak3086e946b08a0c58a2d7b9a8f98471f6
+                                a(href='mailto:info@saedmali.com') info@saedmali.com
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p Carte d&rsquo;Agr&eacute;ment des TP-N&deg;
+                            p Date de Validit&eacute;
+                          td(style='width: 230px;')
+                            p N&deg; 99-007/IC/DNI-GU
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p N&deg; Caisse de S&eacute;curit&eacute; Sociale
+                          td(style='width: 230px;')
+                            p N&deg; 83221946/1
+                        tr
+                          td(style='width: 421px;', colspan='2')
+                            p N&deg; d&rsquo;identification fiscale (Compte Contribuable)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          td(style='width: 230px;')
+                            p N&deg; 081101749M
+                        tr
+                          td(style='width: 657px;', colspan='3')
+                            p
+                              strong Nom et pr&eacute;noms des responsables ayant habilit&eacute; &agrave; signer les documents
+                        tr
+                          td(style='width: 313px;')
+                            p TRAORE Yacouba
+                          td(style='width: 338px;', colspan='2')
+                            p Directeur
+                        tr
+                          td(style='width: 313px;')
+                            p ELO Kodjo Kod&eacute;gou
+                          td(style='width: 338px;', colspan='2')
+                            p Directeur Adjoint
+
                         br
                         | L'entreprise s’est fixée comme objectif d’assurer des prestations de qualité en matière d’étude, de conseil et d’assistance à la maîtrise d’ouvrage dans les domaines qui sont:
-                        ul
+                        ul.feature-list.MsoNormal(style='text-align: justify')
                           li
                             strong les infrastructures de transport,
                           li
@@ -80,14 +178,15 @@ block content
                           li
                             strong les bâtiments civils et industriels.
                         br
-                        | SAED Mali dispose d’une équipe de professionnels qualifiés, aptes à répondre aux exigences de ses Clients.
+                        | SAED sarl dispose d’une équipe de professionnels qualifiés, aptes à répondre aux exigences de ses Clients.
                         br
                         br
                         | Elle travaille aussi bien pour les administrations publiques que pour les organisations internationales et les entreprises privées.
                         br
                         br
-                        | Grâce à la motivation et l’implication de tout le personnel, SAED est certifié ISO 9001, OHSAS 18001 et ISO 14001.
-                        h5 No valeurs et engagements
+                        | Grâce à la motivation et l’implication de tout le personnel, SAED sarl est certifié ISO 9001, OHSAS 18001 et ISO 14001.
+                        br
+                        h2 No valeurs et engagements
                         div
                          .column-content
                           ul.feature-list
@@ -104,7 +203,7 @@ block content
 
                   .flex-child
                     .right
-                      h5 Presentation de la SAED
+                      h5 Presentation de la SAED sarl
                       | Vous pouvez télécharger notre 
                       br
                       | plaquette de présentation pour en 

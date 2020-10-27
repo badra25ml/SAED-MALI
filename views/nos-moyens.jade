@@ -1,4 +1,66 @@
 extends layout
 
 block content
-  p Welcome to #{title}
+ .clearfix
+    .gsc-tab-views.style-1
+      .clearfix.text-center
+       div
+       ul.nav.nav-tabs
+          h2.title
+            span(style="text-transform:uppercase") Nos moyens materiels
+          ol
+           li
+             a(href="/index") Acceuil&nbsp
+           span /
+           li 
+           li 
+            | &nbspMoyens Materiels
+    // Body
+    #top.body
+      .container
+        
+            // Begin Content
+            #item-page
+              div.page-header
+                div.moyens-materiels
+                 h2.moyens
+                  a(href="/nos-moyens" ) 
+                    //- rel="bookmark"
+                   span Nos moyens materiels
+              div
+                p
+                  | Pour la réalisation des différentes missions d’études qui lui sont confiées, 
+                  strong SAED Sarl
+                  |  dispose de matériels techniques performants dont l’usage est parfaitement maîtrisé par un personnel compétent ayant acquit une formation adéquate et une documentation riche et variée en la matière leur permettant ainsi de répondre avec satisfactions aux attentes des clients et usagers.
+                p
+                  | La liste des matériels de la 
+                  strong SAED
+                  strong  sarl  
+                  | est ci-dessus indiquée :
+                br
+            .clearfix
+            // End Content
+            .w3-content(style='max-width:1200px')
+              object(data="../images/moyens-materiels.pdf", type="application/pdf", style="width:100%; height:79rem; border: 1rem solid #1d85a7")
+              br
+              br
+              //- img.mySlides(src='../images/materiel2.png' style='width:100%;display:none')
+              //- img.mySlides(src='../images/materiel3.png' style='width:100%;display:none')
+              //- img.mySlides(src='../images/PK38A.JPG' style='width:100%;display:none')
+              //- img.mySlides(src='../images/PK358A.JPG' style='width:100%;display:none')
+              //- img.mySlides(src='../images/presentation3.png' style='width:100%;display:none')
+              //- .w3-row-padding.w3-section
+                //- .w3-col.s4
+                //-   iframe.demo.w3-opacity.w3-hover-opacity-off(src='../images/materiel1.pdf' style='width:100%;cursor:pointer' onclick='currentDiv(1)')
+                //- .w3-col.s4
+                //-   img.demo.w3-opacity.w3-hover-opacity-off(src='../images/materiel2.png' style='width:100%;cursor:pointer' onclick='currentDiv(2)')
+                //- .w3-col.s4
+                //-   img.demo.w3-opacity.w3-hover-opacity-off(src='../images/materiel3.png' style='width:100%;cursor:pointer' onclick='currentDiv(3)')
+                //-   br
+                //-   br
+                //- .w3-col.s4
+                //-   img.demo.w3-opacity.w3-hover-opacity-off(src='../images/PK38A.JPG' style='width:100%;cursor:pointer' onclick='currentDiv(4)')
+                //- .w3-col.s4
+                //-   img.demo.w3-opacity.w3-hover-opacity-off(src='../images/PK358A.JPG' style='width:100%;cursor:pointer' onclick='currentDiv(5)')
+                //- .w3-col.s4
+                //-   img.demo.w3-opacity.w3-hover-opacity-off(src='../images/presentation3.png' style='width:100%;cursor:pointer' onclick='currentDiv(6)')
