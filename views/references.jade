@@ -2,14 +2,21 @@ extends layout
 
 block content
 
-  .clearfix
-    .gsc-tab-views.style-1
-        ul.nav.nav-tabs
+   .clearfix
+     .gsc-tab-views.style-1
+      .clearfix.text-center
+      div
+      ul.nav.nav-tabs
           h2.title
-            span NOS REFERENCES
-          h4
-            | Société Africaine d'Etudes pour le developpement 
-            .clearfix.propos
+            span(style="text-transform:uppercase") Nos Références
+          ol
+            li
+              a(href="/") Acceuil&nbsp
+            span /
+            li 
+            li 
+             | &nbspRéférences
+    .clearfix.propos
               .node__content.clearfix
                 .field.field--name-field-block-builder.field--type-blockbuilder.field--label-hidden.field__item
                   .gavias-blockbuilder-content
