@@ -435,6 +435,11 @@ table.row-wrapper.clearfix {
   /* transform: rotateY(35deg); */
   /* margin: 0px 100px; */
 }
+
+  .flex-child.table:first-child{
+    display: contents;
+  }
+
 .gsc-tab-views.style-references  > ul {
   list-style: none;
   display: grid;
