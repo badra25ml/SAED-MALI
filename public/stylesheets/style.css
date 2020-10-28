@@ -445,7 +445,7 @@ table.row-wrapper.clearfix {
   display: grid;
   margin: auto;
   width: 50%;
-  border: 3px solid  #1d85a7;
+  /* border: 3px solid  #1d85a7; */
   padding: 10px;
   box-shadow: 0px 3px 15px 0px rgba(1,0,0,1.3);
 }
