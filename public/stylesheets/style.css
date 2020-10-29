@@ -22,7 +22,29 @@ body.footer-background #footer {
     font-weight: 700;
   }
 }
-@media only screen and (min-width:200px) and (max-width:768px) {
+@media screen and (min-width: 768px){
+.carousel-caption {
+    left: 23%;
+    right: 20%;
+    padding-bottom: 30px;
+ }
+}
+@media screen and (min-width: 200px) and (max-width:767px) {
+  .carousel-caption {
+    position: absolute;
+    left: -45%;
+    right: 15%;
+    bottom: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+   }
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
       .gsc-tab-views.style-2 {
         display: none;
       }
@@ -36,11 +58,11 @@ body.footer-background #footer {
      } 
      .carousel.slide {
        max-height: 350px;
-       max-width: 800px;
+       max-width: 280px;
      }
      .carousel-inner > .item > img {
        max-height: 350px;
-       max-width: 800px;
+       max-width: 280px;
        }
        .carousel-inner > .item.active{
          /* width: 1020px; */
@@ -105,6 +127,11 @@ div > h6 {
 
 .gv-sticky-menu {
 
+}
+.container-carousel-tab-view {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-carousel-tab-view, .flex-container-propos{
   display: flex;
@@ -176,6 +203,7 @@ div > h6 {
     height: 200px;
     width: 350px;
   } */
+  
   .carousel-caption, .item, .active{
     transform: translateX(-30%);
   }
@@ -210,15 +238,26 @@ div > h6 {
  /* .carousel.slide {
    min-height: 400px;
    /* max-width: 400px; */
- } */
+
+   .gsc-tab-views.style-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+   }
+   .carousel-caption {
+    left: -25%;
+    top: 52%;
+    right: 20%;
+    padding-bottom: 30px;
+}
+ } 
  .carousel-inner > .item > img {
    min-height: 400px;
    /* max-width: 400px; */
    }
   
-}
 
-}
 
 
 @media only screen and (min-width:540px) and (max-width:760px) {
@@ -429,6 +468,20 @@ header#header.header-v1.row-wrapper.clearfix {
   text-align: center;
   margin: 5px;
 }
+
+@media only screen and (min-width:200px) and (max-width:280px) {
+  .container-carousel-tab-view {
+    max-width: 270px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width:430px) and (max-width:770px){
+  .container-carousel-tab-view {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
 /* references page */
 table.row-wrapper.clearfix {
   display: block;
@@ -485,3 +538,11 @@ table.row-wrapper.clearfix {
     width: 100%;
   } 
 }  */
+.w3-content {
+  /* overflow: scroll;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -webkit-box; */
+  overflow : auto;
+   /* -webkit-overflow-scrolling : touch; */
+}
