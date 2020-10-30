@@ -229,6 +229,7 @@ jQuery(document).ready(function () {
       var $el = $( this ),
           $filter = $( '.portfolio-filter a.' + _pid ),
           $loop =  $( this );
+          console.log($el)
 
       $loop.isotope();
 
@@ -312,30 +313,30 @@ jQuery(document).ready(function () {
   /*----------------------------------------------------*/
   /*  Pie Charts
   /*----------------------------------------------------*/
-  var pieChartClass = 'pieChart',
-        pieChartLoadedClass = 'pie-chart-loaded';
+  // var pieChartClass = 'pieChart',
+  //       pieChartLoadedClass = 'pie-chart-loaded';
     
-  function initPieCharts() {
-    var chart = $('.' + pieChartClass);
-    chart.each(function() {
-      $(this).appear(function() {
-        var $this = $(this),
-          chartBarColor = ($this.data('bar-color')) ? $this.data('bar-color') : "#F54F36",
-          chartBarWidth = ($this.data('bar-width')) ? ($this.data('bar-width')) : 150
-        if( !$this.hasClass(pieChartLoadedClass) ) {
-          $this.easyPieChart({
-            animate: 2000,
-            size: chartBarWidth,
-            lineWidth: 8,
-            scaleColor: false,
-            trackColor: "#eee",
-            barColor: chartBarColor,
-          }).addClass(pieChartLoadedClass);
-        }
-      });
-    });
-  }
-  initPieCharts();
+  // function initPieCharts() {
+  //   var chart = $('.' + pieChartClass);
+  //   chart.each(function() {
+  //     $(this).appear(function() {
+  //       var $this = $(this),
+  //         chartBarColor = ($this.data('bar-color')) ? $this.data('bar-color') : "#F54F36",
+  //         chartBarWidth = ($this.data('bar-width')) ? ($this.data('bar-width')) : 150
+  //       if( !$this.hasClass(pieChartLoadedClass) ) {
+  //         $this.easyPieChart({
+  //           animate: 2000,
+  //           size: chartBarWidth,
+  //           lineWidth: 8,
+  //           scaleColor: false,
+  //           trackColor: "#eee",
+  //           barColor: chartBarColor,
+  //         }).addClass(pieChartLoadedClass);
+  //       }
+  //     });
+  //   });
+  // }
+  // initPieCharts();
 
   // ============================================================================
   // mb_YTPlayer video background

@@ -33,12 +33,13 @@ function showDivs(n) {
 function filter(e){
   let valu = document.getElementsByClassName("btn-filter");
   valu.onClick = function changeContent(e){
+    console.log("clicked")
     // document.getElementById('nos-projets').innerHTML = "";
     
   }
   valu.onClick()
 }
-filter()
+
 
 
 
@@ -106,6 +107,6 @@ jQuery('a.control_next').click(function () {
 
 // PDF utility for nos moyens page
 
-document.getElementById("theFrame").contentWindow.onload = function() {
-  this.document.getElementsByTagName("img")[0].style.width="100%";
-  };
+// document.getElementById("theFrame").contentWindow.onload = function() {
+//   this.document.getElementsByTagName("img")[0].style.width="100%";
+//   };
