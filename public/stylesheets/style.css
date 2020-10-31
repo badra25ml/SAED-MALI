@@ -597,3 +597,12 @@ table.row-wrapper.clearfix {
     display: none;
   }
 }
+form.centered {
+  display: block;
+  
+}
+.form-group > input {
+  background-color: inherit;
+  width: 100%;
+  color: #F7F8F8;
+}
