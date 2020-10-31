@@ -23,7 +23,7 @@ block content
           .bb-container.container
             .row
               .row-wrapper.clearfix
-                .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12(style="margin:15px")
                     // Body
                     #top.body
                       .container
@@ -52,11 +52,17 @@ block content
                             .w3-content(style='max-width:1200px')
                               //- #scroller(style='height: 400px; width: 100%; overflow: auto;')
                               //-  iframe#iframe(src="../images/moyens-materiels.pdf", frameborder="0", height="100%", scrolling="no", width="100%")
-                              iframe(id="theFrame", src='../images/moyens-materiels.pdf', allow="fullscreen", style="width:100%; height:79rem; ", scrolling="yes")
+                              iframe(id="theFrame", src='../assets/Moyens_Materiels.pdf', allow="fullscreen", style="width:100%; height:79rem; ", scrolling="yes")
     
                               //-  iframe(src="../images/moyens-materiels.pdf", frameborder="0", style="width:100%; height:50rem; ", scrolling="yes")
                               //- object(data="../images/moyens-materiels.pdf", type="application/pdf", style="width:100%; height:79rem; ", scrolling="no")
                               //- embed(src="../images/moyens-materiels.pdf", type="application/pdf", style="width:100%; height:50rem; ", scrolling="no", pluginspage="http://www.adobe.com/products/acrobat/readstep2.html") 
-          br
+                   
+                    .column-content-inner.presentation
+                                          br
+                                          div
+                                          .action
+                                          a.btn-theme(target="_blank" href="../assets/Moyens_Materiels.pdf") Telecharger le document
+                                        br
                         
                               
