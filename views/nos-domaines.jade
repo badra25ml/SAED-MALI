@@ -2,4 +2,32 @@ extends layout
 
 block content
   br
-  p Welcome to #{title}
+  .clearfix
+    .gsc-tab-views.style-1
+      .clearfix.text-center
+       div
+       ul.nav.nav-tabs
+          h2.title
+            span(style="text-transform:uppercase") Nos Domaines
+          ol
+           li(style="text-align:right")
+             a(href="/") Acceuil&nbsp
+           span /
+           li  
+            | &nbspDomaines
+    br
+    div
+    .propos-contenu
+    p
+      strong(style="margin:10px") Nos réalisations couvrent les domaines suivants :
+      ul.feature-list.MsoNormal(style='text-align: justify; margin:15px')
+        li Mission d’assistance,
+        li Mission de formation et de sensibilisation des communautés rurales,
+        li Génie civil, Travaux d’aménagements de route et les travaux de bâtiment,
+        li Aménagement d’espace,
+        li Hydraulique urbaine et industrielle,
+        li Hydraulique villageoise et pastorale,
+        li Aménagement hydro agricole,
+        li Formation aux nouvelles technologies dans le domaine des aménagements routiers et de l’espace (Micro piste et AutoCAD),
+        li Développement urbain,
+        li Développement rural et gestion des ressources naturelles.
