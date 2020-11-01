@@ -153,21 +153,32 @@ html(lang='fr')
                     #block-gavias-buildpro-simplenewssubscription.simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2.simplenews-subscriber-form.block.block-simplenews.block-simplenews-subscription-block(data-drupal-selector='simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2')
                       h2.block-title
                         span NewsLetter
-                      .content.block-content
-                        form#simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2(action='/fr' method='post' accept-charset='UTF-8')
-                          #edit-subscriptions-wrapper.field--type-simplenews-subscription.field--name-subscriptions.field--widget-simplenews-subscription-select.js-form-wrapper.form-wrapper(data-drupal-selector='edit-subscriptions-wrapper')
-                          #edit-message.js-form-item.form-item.js-form-type-item.form-item-message.js-form-item-message.form-no-label
-                            | Abonnez-vous pour recevoir nos dernières nouvelles
-                          input(autocomplete='off' data-drupal-selector='form-edny-ybarel0-pavfjaze4rye9eqtz3tbhzi-xe9dz8' type='hidden' name='form_build_id' value='form-edNY_YBaReL0_PAvFjAzE4RYe9EQtz3tBhZi_xE9dZ8')
-                          input(data-drupal-selector='edit-simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2' type='hidden' name='form_id' value='simplenews_subscriptions_block_835cd89f-b15a-48ec-b0a6-401ae3d0beb2')
-                          #edit-mail-wrapper.field--type-email.field--name-mail.field--widget-email-default.js-form-wrapper.form-wrapper(data-drupal-selector='edit-mail-wrapper')
-                            .js-form-item.form-item.js-form-type-email.form-item-mail-0-value.js-form-item-mail-0-value
-                              label.js-form-required.form-required(for='edit-mail-0-value') Email
-                              input#edit-mail-0-value.form-email.required(data-drupal-selector='edit-mail-0-value' aria-describedby='edit-mail-0-value--description' type='email' name='mail[0][value]' value='' size='60' maxlength='254' placeholder='' required='required' aria-required='true')
-                              #edit-mail-0-value--description.description
-                                | L'adresse email de l'abonné.
-                          #edit-actions.form-actions.js-form-wrapper.form-wrapper(data-drupal-selector='edit-actions')
-                            input#edit-subscribe.button.js-form-submit.form-submit(data-drupal-selector='edit-subscribe' type='submit' name='op' value='souscrire')
+                      form.centered.mt-10.ml-10.mr-10(action='/signup' method='POST', style="width:80%; margin-left:auto; margin-right:auto")
+                        .form-group
+                          input#firstname.form-input(type='text' Placeholder="Prénom" name='firstname' required="")
+                        .form-group
+                          input#lastname.form-input(type='text' Placeholder="Nom de Famille" name='lastname' required="")
+                        .form-group
+                          input#email.form-input(type='text' Placeholder="Email" name='email' required="")
+                        .form-group
+                          input.btn.btn-primary(type='submit' value='Souscrire')
+                         
+
+                          //- .content.block-content
+                          //-   form#simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2(action='/fr' method='post' accept-charset='UTF-8')
+                          //-     #edit-subscriptions-wrapper.field--type-simplenews-subscription.field--name-subscriptions.field--widget-simplenews-subscription-select.js-form-wrapper.form-wrapper(data-drupal-selector='edit-subscriptions-wrapper')
+                          //-     #edit-message.js-form-item.form-item.js-form-type-item.form-item-message.js-form-item-message.form-no-label
+                          //-       | Abonnez-vous pour recevoir nos dernières nouvelles
+                          //- input(autocomplete='off' data-drupal-selector='form-edny-ybarel0-pavfjaze4rye9eqtz3tbhzi-xe9dz8' type='hidden' name='form_build_id' value='form-edNY_YBaReL0_PAvFjAzE4RYe9EQtz3tBhZi_xE9dZ8')
+                          //- input(data-drupal-selector='edit-simplenews-subscriptions-block-835cd89f-b15a-48ec-b0a6-401ae3d0beb2' type='hidden' name='form_id' value='simplenews_subscriptions_block_835cd89f-b15a-48ec-b0a6-401ae3d0beb2')
+                          //- #edit-mail-wrapper.field--type-email.field--name-mail.field--widget-email-default.js-form-wrapper.form-wrapper(data-drupal-selector='edit-mail-wrapper')
+                          //-   .js-form-item.form-item.js-form-type-email.form-item-mail-0-value.js-form-item-mail-0-value
+                          //-     label.js-form-required.form-required(for='edit-mail-0-value') Email
+                          //-     input#edit-mail-0-value.form-email.required(data-drupal-selector='edit-mail-0-value' aria-describedby='edit-mail-0-value--description' type='email' name='mail[0][value]' value='' size='60' maxlength='254' placeholder='' required='required' aria-required='true')
+                          //-     #edit-mail-0-value--description.description
+                          //-       | L'adresse email de l'abonné.
+                          //- #edit-actions.form-actions.js-form-wrapper.form-wrapper(data-drupal-selector='edit-actions')
+                          //-   input#edit-subscribe.button.js-form-submit.form-submit(data-drupal-selector='edit-subscribe' type='submit' name='op' value='souscrire')
         .copyright
           .container
             .copyright-inner
