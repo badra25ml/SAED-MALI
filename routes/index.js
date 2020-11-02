@@ -1,5 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var request = require('superagent');
+var axios = require('superagent');
+
+var mailchimpInstance   = process.env.mailchimpInstance,
+    listUniqueId        = process.env.listUniqueId,
+    mailchimpApiKey     = process.env.mailchimpApiKey;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -73,6 +79,30 @@ router.get('/reference-routes-bitumees', function(req, res, next) {
 /* GET Piste Rurale page. */
 router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
   res.render('reference-piste-rurale-amelioree', { title: 'Référence-Piste-Rurale-Améliorée' });
+});
+router.post('/signup', function (req, res) {
+  
+  // save user details to your database.
+  axios
+        .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
+
+        .set('Content-Type', 'application/json;charset=utf-8')
+        .set('Authorization', 'Basic ' + new Buffer.from('anystring:' + mailchimpApiKey ).toString('base64'))
+        .send({
+          'email_address': req.body.email,
+          'status': 'subscribed',
+          'merge_fields': {
+            'FNAME': req.body.firstName,
+            'LNAME': req.body.lastName
+          }
+        })
+            .end(function(err, response) {
+              if (response.status < 300 || (response.status === 400 && response.body.title === "Member Exists")) {
+                res.send('Signed Up!');
+              } else {
+                res.send('Sign Up Failed :(');
+              }
+          });
 });
 
 module.exports = router;
