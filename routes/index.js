@@ -104,7 +104,7 @@ router.post('/signup', function (req, res) {
                 // req.flash('success_msg', 'Souscrit');
                 res.redirect("/");
               } else {
-                res.send('Sign Up Failed :(');
+                res.send("Une erreure s'est produite:(");
               }
           });
 });
