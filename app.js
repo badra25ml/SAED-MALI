@@ -6,13 +6,16 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongo = require('mongodb');
 var mongoose= require('mongoose');
+var dotenv = require('dotenv').config();
 var monk = require('monk');
 var request = require('superagent');
+var flash = require('connect-flash');
+var session = require('express-session');
 var db = mongoose.connect('mongodb://localhost/newsletter', {useNewUrlParser: true, useUnifiedTopology: true});
 var db1 = monk('localhost:27017/newsletter');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var index = require('./routes/index');
+var users = require('./routes/users');
 
 var app = express();
 
@@ -31,9 +34,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret:'secret',
+  saveUninitialized: true,
+  resave: true
+}));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use(flash());
+
+app.use('/', index);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

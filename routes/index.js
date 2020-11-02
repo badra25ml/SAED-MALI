@@ -1,7 +1,9 @@
 var express = require('express');
+var dotenv = require('dotenv').config();
 var router = express.Router();
 var request = require('superagent');
 var axios = require('superagent');
+
 
 var mailchimpInstance   = process.env.mailchimpInstance,
     listUniqueId        = process.env.listUniqueId,
@@ -20,35 +22,35 @@ router.get('/ageroutesenegal', function(req, res, next) {
 router.get('/nos-domaines', function(req, res, next) {
   res.render('nos-domaines', { title: 'Nos Domaines' });
 });
-/* GET home page. */
+/* GET nos-moyens page. */
 router.get('/nos-moyens', function(req, res, next) {
   res.render('nos-moyens', { title: 'Nos moyens' });
 });
-/* GET home page. */
+/* GET notre-mission page. */
 router.get('/notre-mission', function(req, res, next) {
   res.render('notre-mission', { title: 'Notre Mission' });
 });
-/* GET home page. */
+/* GET nous-contacter page. */
 router.get('/nous-contacter', function(req, res, next) {
   res.render('nous-contacter', { title: 'Contact' });
 });
-/* GET home page. */
+/* GET perimetre page. */
 router.get('/perimetre', function(req, res, next) {
   res.render('perimetre', { title: 'Périmètre' });
 });
-/* GET home page. */
+/* GET projets page. */
 router.get('/projets', function(req, res, next) {
   res.render('projets', { title: 'Nos Projets' });
 });
-/* GET home page. */
+/* GET propos page. */
 router.get('/propos', function(req, res, next) {
   res.render('propos', { title: 'A Propos de nous' });
 });
-/* GET home page. */
+/* GET references page. */
 router.get('/references', function(req, res, next) {
   res.render('references', { title: 'Références' });
 });
-/* GET home page. */
+/* GET sodagri page. */
 router.get('/sodagri', function(req, res, next) {
   res.render('sodagri', { title: 'Sodagri' });
 });
@@ -81,8 +83,8 @@ router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
   res.render('reference-piste-rurale-amelioree', { title: 'Référence-Piste-Rurale-Améliorée' });
 });
 router.post('/signup', function (req, res) {
-  
-  // save user details to your database.
+ 
+  // Register to mailchimp
   axios
         .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
 
@@ -97,8 +99,10 @@ router.post('/signup', function (req, res) {
           }
         })
             .end(function(err, response) {
+             
               if (response.status < 300 || (response.status === 400 && response.body.title === "Member Exists")) {
-                res.send('Signed Up!');
+                // req.flash('success_msg', 'Souscrit');
+                res.redirect("/");
               } else {
                 res.send('Sign Up Failed :(');
               }

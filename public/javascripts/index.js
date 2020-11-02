@@ -110,3 +110,5 @@ jQuery('a.control_next').click(function () {
 // document.getElementById("theFrame").contentWindow.onload = function() {
 //   this.document.getElementsByTagName("img")[0].style.width="100%";
 //   };
+//  var w = window.open('http://localhost:3000/assets/Moyens_Materiels.pdf', title="Nos Moyens");
+//  w.document.title = "Nos Moyens"
