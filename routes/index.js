@@ -106,9 +106,7 @@ router.post('/signup', function (req, res) {
                 // req.flash('success_msg', 'Souscrit');
                 res.redirect("/");
               } else {
-                
-                res.send("Une erreure s'est produite:(");
-                
+                res.send("Une erreure s'est produite:(");           
               }
           });
 });
