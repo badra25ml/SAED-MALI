@@ -613,3 +613,6 @@ form.centered {
   width: 500px;
   text-align: center;
 }
+li.active{
+  width: -webkit-fill-available;
+}
