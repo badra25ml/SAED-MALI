@@ -4,15 +4,15 @@ var path = require('path');
 // var request = require('request');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongo = require('mongodb');
-var mongoose= require('mongoose');
+// var mongo = require('mongodb');
+// var mongoose= require('mongoose');
 var dotenv = require('dotenv').config();
-var monk = require('monk');
+// var monk = require('monk');
 var request = require('superagent');
-var flash = require('connect-flash');
-var session = require('express-session');
-var db = mongoose.connect('mongodb://localhost/newsletter', {useNewUrlParser: true, useUnifiedTopology: true});
-var db1 = monk('localhost:27017/newsletter');
+// var flash = require('connect-flash');
+// var session = require('express-session');
+// var db = mongoose.connect('mongodb://localhost/newsletter', {useNewUrlParser: true, useUnifiedTopology: true});
+// var db1 = monk('localhost:27017/newsletter');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -20,10 +20,10 @@ var users = require('./routes/users');
 var app = express();
 
 // make database accessible to the router
-app.use(function(req, res, next){
-  req.db1 = db1;
-  next();
-})
+// app.use(function(req, res, next){
+//   req.db1 = db1;
+//   next();
+// })
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,13 +34,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({
-  secret:'secret',
-  saveUninitialized: true,
-  resave: true
-}));
+// app.use(session({
+//   secret:'secret',
+//   saveUninitialized: true,
+//   resave: true
+// }));
 
-app.use(flash());
+// app.use(flash());
 
 app.use('/', index);
 app.use('/users', users);
