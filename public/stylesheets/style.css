@@ -606,3 +606,13 @@ form.centered {
   width: 100%;
   color: #F7F8F8;
 }
+
+.alert {
+  /*display: inline-block;*/
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+li.active{
+  width: -webkit-fill-available;
+}
