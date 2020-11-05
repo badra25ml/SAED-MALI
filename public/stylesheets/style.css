@@ -6,6 +6,9 @@
 a {
   color: #00B7FF;
 } */
+html {
+  scroll-behavior: smooth;
+}
 body.footer-background #footer {
   background: #121212;
 }
@@ -62,7 +65,7 @@ body.footer-background #footer {
      }
      .carousel-inner > .item > img {
        max-height: 350px;
-       max-width: 280px;
+       width: 100%;
        }
        .carousel-inner > .item.active{
          /* width: 1020px; */
@@ -615,4 +618,85 @@ form.centered {
 }
 li.active{
   width: -webkit-fill-available;
+}
+@media only screen and (min-width:280px) and (max-width:360px){
+  .carousel-caption > h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .carousel-caption  {
+    margin-bottom: 100px;
+  }
+  #myCarousel.carousel.slide {
+    width: 100%;
+    margin: auto;
+  }
+  .gsc-tab-views.style-1 > .clearfix.text-center > .nav.nav-tabs > ol {
+    padding: 0px;
+    /* margin: auto;
+    width: 100%; */
+  }
+  .flex-child.table > .left > table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+  }
+}
+@media only screen and (min-width:540px) and (max-width:770px){
+  #myCarousel.carousel.slide {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width:360px) and (max-width:460px) {
+  .gsc-tab-views.style-1 > .clearfix.text-center > .nav.nav-tabs > ol {
+    padding: inherit;
+    /* margin: auto;
+    width: 100%; */
+  }
+  .carousel-caption > h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .carousel-caption  {
+    margin-bottom: 100px;
+  }
+ }
+  @media only screen and (min-width:461px) and (max-width:771px){
+    .gsc-tab-views.style-1 > .clearfix.text-center > .nav.nav-tabs > ol{
+      padding: inherit;
+    }
+    .carousel-caption > h3 {
+      /* margin-left: 140px; */
+    }
+    .carousel-caption  {
+      margin-bottom: -30px;
+      text-align: center;
+      
+    }
+    .carousel-caption > p {
+      /* margin-left: 140px; */
+    }
+    
+  #myCarousel.carousel {
+   display: contents;
+  }
+  .carousel-indicators {
+    
+  }
+  .carousel.slide {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-inner {
+    min-height: 400px;
+    width: 100%;
+  }
+  .carousel-inner > .item > img {
+    width: 100%;
+  }
+ .container-carousel-tab-view {
+   display: contents;
+ }
 }

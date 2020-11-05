@@ -82,9 +82,12 @@ router.get('/reference-routes-bitumees', function(req, res, next) {
 router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
   res.render('reference-piste-rurale-amelioree', { title: 'Référence-Piste-Rurale-Améliorée' });
 });
+
+// Register to mailchimp
+
 router.post('/signup', function (req, res) {
  
-  // Register to mailchimp
+  
   axios
         .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
 
@@ -99,12 +102,11 @@ router.post('/signup', function (req, res) {
           }
         })
             .end(function(err, response) {
-             
               if (response.status < 300 || (response.status === 400 && response.body.title === "Member Exists")) {
                 // req.flash('success_msg', 'Souscrit');
                 res.redirect("/");
               } else {
-                res.send("Une erreure s'est produite:(");
+                res.send("Une erreure s'est produite:(");           
               }
           });
 });
