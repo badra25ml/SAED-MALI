@@ -715,3 +715,9 @@ li.active{
    text-align: justify;
  }
 }
+.bb-inner.default {
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 135px;
+}
