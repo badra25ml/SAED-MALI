@@ -9,6 +9,7 @@ var logger = require('morgan');
 var dotenv = require('dotenv').config();
 // var monk = require('monk');
 var request = require('superagent');
+var newrelic = require('newrelic');
 // var flash = require('connect-flash');
 // var session = require('express-session');
 // var db = mongoose.connect('mongodb://localhost/newsletter', {useNewUrlParser: true, useUnifiedTopology: true});
