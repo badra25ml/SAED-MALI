@@ -98,7 +98,8 @@ router.post('/signup', function (req, res) {
           'status': 'subscribed',
           'merge_fields': {
             'FNAME': req.body.firstName,
-            'LNAME': req.body.lastName
+            'LNAME': req.body.lastName,
+            'PHONE': req.body.tel
           }
         })
             .end(function(err, response) {
