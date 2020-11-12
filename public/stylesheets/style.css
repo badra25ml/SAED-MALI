@@ -232,6 +232,7 @@ div > h6 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    
   }
 }
 
@@ -261,7 +262,7 @@ div > h6 {
     position: relative;
    }
    .carousel-caption {
-    left: -25%;
+    /* left: -25%; */
     top: 52%;
     right: 20%;
     padding-bottom: 30px;
@@ -625,8 +626,14 @@ li.active{
     margin-bottom: 20px;
   }
   .carousel-caption  {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    margin: 125px;
+    width: 100%;
+    height: 100px;
   }
+  
+    
+  
   #myCarousel.carousel.slide {
     width: 100%;
     margin: auto;
@@ -655,12 +662,17 @@ li.active{
     /* margin: auto;
     width: 100%; */
   }
+  .carousel-caption {
+    margin: 125px;
+    width: 100%;
+    height: 135px;
+  }
   .carousel-caption > h3 {
     font-size: 20px;
     margin-bottom: 20px;
   }
   .carousel-caption  {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
  }
   @media only screen and (min-width:461px) and (max-width:771px){
@@ -668,22 +680,34 @@ li.active{
       padding: inherit;
     }
     .carousel-caption > h3 {
-      /* margin-left: 140px; */
+      width: 100%;
+      margin: 0px 20px;
     }
     .carousel-caption  {
       margin-bottom: -30px;
       text-align: center;
+<<<<<<< HEAD
 
+=======
+      left: inherit;
+>>>>>>> 957f895d3311995c5129a19ee5b8d9b8af9af543
     }
     .carousel-caption > p {
-      /* margin-left: 140px; */
+      width: 100%;
+      margin: 0px 20px;
     }
 
   #myCarousel.carousel {
    display: contents;
+
   }
   .carousel-indicators {
+<<<<<<< HEAD
 
+=======
+    width: 100%;
+    margin-top: 100px;
+>>>>>>> 957f895d3311995c5129a19ee5b8d9b8af9af543
   }
   .carousel.slide {
     height: 100%;
@@ -698,5 +722,31 @@ li.active{
   }
  .container-carousel-tab-view {
    display: contents;
+   width: 100%;
+   text-align: justify;
  }
 }
+<<<<<<< HEAD
+=======
+.bb-inner.default {
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 135px;
+}
+@media only screen and (min-width:760px) and (max-width:991px){
+  .row-wrapper.clearfi.home-page {
+    display: flex;
+    width: 100%;
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+}
+@media only screen and (min-width:280px) and (max-width:759px){
+  .row-wrapper.clearfi.home-page {
+    width: 100%;
+    margin-left: -135px;
+    margin-right: -150px;
+  }
+}
+>>>>>>> 957f895d3311995c5129a19ee5b8d9b8af9af543
