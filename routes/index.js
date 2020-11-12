@@ -82,6 +82,10 @@ router.get('/reference-routes-bitumees', function(req, res, next) {
 router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
   res.render('reference-piste-rurale-amelioree', { title: 'Référence-Piste-Rurale-Améliorée' });
 });
+/* GET recutement page. */
+router.get('/recrutement', function(req, res, next) {
+  res.render('recrutement', { title: 'Recrutement' });
+});
 
 // Register to mailchimp
 
