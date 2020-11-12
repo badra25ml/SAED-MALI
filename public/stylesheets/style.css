@@ -232,7 +232,7 @@ div > h6 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    
+
   }
 }
 
@@ -631,9 +631,9 @@ li.active{
     width: 100%;
     height: 100px;
   }
-  
-    
-  
+
+
+
   #myCarousel.carousel.slide {
     width: 100%;
     margin: auto;
@@ -726,8 +726,6 @@ li.active{
    text-align: justify;
  }
 }
-<<<<<<< HEAD
-=======
 .bb-inner.default {
   width: 100%;
     margin-left: auto;
@@ -749,4 +747,15 @@ li.active{
     margin-right: -150px;
   }
 }
->>>>>>> 957f895d3311995c5129a19ee5b8d9b8af9af543
+<<<<<<< HEAD
+=======
+
+.recrutement > h3 {
+  display: block;
+
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+}
+>>>>>>> 66f458a30feaa755d6449c75ab74212cfccbfbed
