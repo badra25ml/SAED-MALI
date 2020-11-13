@@ -745,7 +745,8 @@ li.active{
 }
 .recrutement > h3 {
   width: 50%;
-margin-left: 33%;
+  text-align: center;
+margin-left: 25%;
 margin-right: 33%;
  position: absolute;
  top: 50%;
