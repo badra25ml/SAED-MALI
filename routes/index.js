@@ -86,6 +86,15 @@ router.get('/reference-piste-rurale-amelioree', function(req, res, next) {
 router.get('/recrutement', function(req, res, next) {
   res.render('recrutement', { title: 'Recrutement' });
 });
+/* GET AEP Senegal page. */
+router.get('/aepsenegal', function(req, res, next) {
+  res.render('aepsenegal', { title: 'AEP SENEGAL' });
+});
+
+/* GET Rarous page. */
+router.get('/rarous', function(req, res, next) {
+  res.render('rarous', { title: 'Projet Electrification ville de Rarous' });
+});
 
 // Register to mailchimp
 
