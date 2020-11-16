@@ -30,15 +30,15 @@ function showDivs(n) {
 }
 // filter on "Nos Projets page"
 
-function filter(e){
-  let valu = document.getElementsByClassName("btn-filter");
-  valu.onClick = function changeContent(e){
-    console.log("clicked")
-    // document.getElementById('nos-projets').innerHTML = "";
+// function filter(e){
+//   let valu = document.getElementsByClassName("btn-filter");
+//   valu.onClick = function changeContent(e){
+//     console.log("clicked")
+//     // document.getElementById('nos-projets').innerHTML = "";
     
-  }
-  valu.onClick()
-}
+//   }
+//   valu.onClick()
+// }
 
 
 
