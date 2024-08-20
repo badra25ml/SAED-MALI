@@ -1,6 +1,9 @@
+.gitignore
 node_modules
 .DS_Store
 files
 second
 public/images/PHOTOS POUR LE SITE SAED/
 .env
+.nvimlog
+newrelic_agent.log
